@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav {
+    background-color: #555;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+nav li {
+    margin: 5px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex: 1;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.section {
+    background-color: white;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+@media (min-width: 400px) {
+    nav ul {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    nav li {
+        margin: 0;
+    }
+
+    .content {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .section {
+        flex: 1 1 45%;
+        margin: 10px;
+    }
+}
+
+@media (min-width: 600px) {
+    header {
+        padding: 20px;
+    }
+
+    nav a {
+        padding: 15px;
+    }
+
+    main {
+        padding: 30px;
+    }
+
+    .section {
+        flex: 1 1 30%;
+    }
+}
+
+@media (min-width: 800px) {
+    .content {
+        flex-direction: row;
+    }
+
+    .section {
+        flex: 1 1 22%;
+    }
+
+    footer {
+        padding: 20px;
+    }
+}
+
+@media (min-width: 1000px) {
+    main {
+        padding: 40px;
+    }
+
+    .section {
+        flex: 1 1 18%;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+    }
+}

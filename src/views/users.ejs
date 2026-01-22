@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Users</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/register">Register</a></li>
+            <li><a href="/login">Login</a></li>
+            <li><a href="/users">Users</a></li>
+            <li><a href="/profile">Profile</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="content">
+            <section class="section">
+                <h2>Users List</h2>
+                <% if (users && users.length > 0) { %>
+                    <ul>
+                        <% users.forEach(user => { %>
+                            <li>
+                                <strong><%= user.name %></strong> - <%= user.email %>
+                            </li>
+                        <% }); %>
+                    </ul>
+                <% } else { %>
+                    <p>No users found.</p>
+                <% } %>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>Footer</p>
+    </footer>
+</body>
+</html>
