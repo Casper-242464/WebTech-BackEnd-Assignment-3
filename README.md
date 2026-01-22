@@ -7,14 +7,12 @@ A Node.js web application built with Express.js that provides user authenticatio
 - [Features](#features)
 - [Technology Stack](#technology-stack)
 - [Prerequisites](#prerequisites)
-- [Installation](#installation)
 - [Configuration](#configuration)
 - [Database Setup](#database-setup)
 - [Running the Application](#running-the-application)
 - [API Documentation](#api-documentation)
 - [Project Structure](#project-structure)
 - [Design Decisions](#design-decisions)
-- [Contributing](#contributing)
 - [License](#license)
 
 ## Features
@@ -90,7 +88,7 @@ JWT_SECRET=your_super_secret_jwt_key_here
    node src/server.js
    ```
 
-3. Open your browser and navigate to `http://localhost:3000`
+3. Open your browser and navigate to `http://localhost:your_port`
 
 ## API Documentation
 
