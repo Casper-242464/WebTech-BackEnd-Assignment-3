@@ -7,7 +7,7 @@ const register = async (req, res) => {
 
   try {
     const existingUser = await userService.getUserByEmail(email);
-    if (existingUser && existingUser.length > 0) {
+    if (existingUser !== null && existingUser !== undefined) {
       return res.status(409).render('register', { error: 'This email is already used.' }); // 409 Conflict
     }
 
