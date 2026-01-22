@@ -19,7 +19,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', router);
 
 app.use((req, res, next) => {
-    res.status(404).json({ message: 'Route not found' }); // 404 Not Found
+    res.status(404).render('404'); // 404 Not Found
 });
 
 app.use(errorHandler);
